@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-5a8aebd90633b9319c26d99a289b9560"}, "facet": {"column": {"field": "Season", "type": "nominal"}}, "spec": {"mark": {"type": "bar"}, "encoding": {"color": {"field": "Season", "scale": {"range": ["brown", "lightgreen", "yellow", "lightgray"]}, "type": "nominal"}, "x": {"field": "Item Purchased", "title": "Items", "type": "nominal"}, "y": {"field": "Count", "title": "Number of Items", "type": "quantitative"}}, "height": 200, "width": 400}, "resolve": {"scale": {"x": "independent"}}, "title": {"text": "Popularity of Items for Each Seasons", "align": "center"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-5a8aebd90633b9319c26d99a289b9560": [{"Item Purchased": "Backpack", "Season": "Fall", "Count": 34}, {"Item Purchased": "Backpack", "Season": "Spring", "Count": 39}, {"Item Purchased": "Backpack", "Season": "Summer", "Count": 45}, {"Item Purchased": "Backpack", "Season": "Winter", "Count": 25}, {"Item Purchased": "Belt", "Season": "Fall", "Count": 41}, {"Item Purchased": "Belt", "Season": "Spring", "Count": 41}, {"Item Purchased": "Belt", "Season": "Summer", "Count": 39}, {"Item Purchased": "Belt", "Season": "Winter", "Count": 40}, {"Item Purchased": "Blouse", "Season": "Fall", "Count": 42}, {"Item Purchased": "Blouse", "Season": "Spring", "Count": 46}, {"Item Purchased": "Blouse", "Season": "Summer", "Count": 43}, {"Item Purchased": "Blouse", "Season": "Winter", "Count": 40}, {"Item Purchased": "Boots", "Season": "Fall", "Count": 35}, {"Item Purchased": "Boots", "Season": "Spring", "Count": 40}, {"Item Purchased": "Boots", "Season": "Summer", "Count": 38}, {"Item Purchased": "Boots", "Season": "Winter", "Count": 31}, {"Item Purchased": "Coat", "Season": "Fall", "Count": 34}, {"Item Purchased": "Coat", "Season": "Spring", "Count": 46}, {"Item Purchased": "Coat", "Season": "Summer", "Count": 42}, {"Item Purchased": "Coat", "Season": "Winter", "Count": 39}, {"Item Purchased": "Dress", "Season": "Fall", "Count": 36}, {"Item Purchased": "Dress", "Season": "Spring", "Count": 43}, {"Item Purchased": "Dress", "Season": "Summer", "Count": 47}, {"Item Purchased": "Dress", "Season": "Winter", "Count": 40}, {"Item Purchased": "Gloves", "Season": "Fall", "Count": 37}, {"Item Purchased": "Gloves", "Season": "Spring", "Count": 42}, {"Item Purchased": "Gloves", "Season": "Summer", "Count": 29}, {"Item Purchased": "Gloves", "Season": "Winter", "Count": 32}, {"Item Purchased": "Handbag", "Season": "Fall", "Count": 48}, {"Item Purchased": "Handbag", "Season": "Spring", "Count": 36}, {"Item Purchased": "Handbag", "Season": "Summer", "Count": 35}, {"Item Purchased": "Handbag", "Season": "Winter", "Count": 34}, {"Item Purchased": "Hat", "Season": "Fall", "Count": 50}, {"Item Purchased": "Hat", "Season": "Spring", "Count": 27}, {"Item Purchased": "Hat", "Season": "Summer", "Count": 37}, {"Item Purchased": "Hat", "Season": "Winter", "Count": 40}, {"Item Purchased": "Hoodie", "Season": "Fall", "Count": 36}, {"Item Purchased": "Hoodie", "Season": "Spring", "Count": 36}, {"Item Purchased": "Hoodie", "Season": "Summer", "Count": 31}, {"Item Purchased": "Hoodie", "Season": "Winter", "Count": 48}, {"Item Purchased": "Jacket", "Season": "Fall", "Count": 54}, {"Item Purchased": "Jacket", "Season": "Spring", "Count": 35}, {"Item Purchased": "Jacket", "Season": "Summer", "Count": 33}, {"Item Purchased": "Jacket", "Season": "Winter", "Count": 41}, {"Item Purchased": "Jeans", "Season": "Fall", "Count": 32}, {"Item Purchased": "Jeans", "Season": "Spring", "Count": 32}, {"Item Purchased": "Jeans", "Season": "Summer", "Count": 31}, {"Item Purchased": "Jeans", "Season": "Winter", "Count": 29}, {"Item Purchased": "Jewelry", "Season": "Fall", "Count": 35}, {"Item Purchased": "Jewelry", "Season": "Spring", "Count": 42}, {"Item Purchased": "Jewelry", "Season": "Summer", "Count": 47}, {"Item Purchased": "Jewelry", "Season": "Winter", "Count": 47}, {"Item Purchased": "Pants", "Season": "Fall", "Count": 38}, {"Item Purchased": "Pants", "Season": "Spring", "Count": 32}, {"Item Purchased": "Pants", "Season": "Summer", "Count": 50}, {"Item Purchased": "Pants", "Season": "Winter", "Count": 51}, {"Item Purchased": "Sandals", "Season": "Fall", "Count": 44}, {"Item Purchased": "Sandals", "Season": "Spring", "Count": 44}, {"Item Purchased": "Sandals", "Season": "Summer", "Count": 40}, {"Item Purchased": "Sandals", "Season": "Winter", "Count": 32}, {"Item Purchased": "Scarf", "Season": "Fall", "Count": 40}, {"Item Purchased": "Scarf", "Season": "Spring", "Count": 41}, {"Item Purchased": "Scarf", "Season": "Summer", "Count": 43}, {"Item Purchased": "Scarf", "Season": "Winter", "Count": 33}, {"Item Purchased": "Shirt", "Season": "Fall", "Count": 39}, {"Item Purchased": "Shirt", "Season": "Spring", "Count": 42}, {"Item Purchased": "Shirt", "Season": "Summer", "Count": 38}, {"Item Purchased": "Shirt", "Season": "Winter", "Count": 50}, {"Item Purchased": "Shoes", "Season": "Fall", "Count": 26}, {"Item Purchased": "Shoes", "Season": "Spring", "Count": 40}, {"Item Purchased": "Shoes", "Season": "Summer", "Count": 46}, {"Item Purchased": "Shoes", "Season": "Winter", "Count": 38}, {"Item Purchased": "Shorts", "Season": "Fall", "Count": 35}, {"Item Purchased": "Shorts", "Season": "Spring", "Count": 47}, {"Item Purchased": "Shorts", "Season": "Summer", "Count": 40}, {"Item Purchased": "Shorts", "Season": "Winter", "Count": 35}, {"Item Purchased": "Skirt", "Season": "Fall", "Count": 46}, {"Item Purchased": "Skirt", "Season": "Spring", "Count": 46}, {"Item Purchased": "Skirt", "Season": "Summer", "Count": 28}, {"Item Purchased": "Skirt", "Season": "Winter", "Count": 38}, {"Item Purchased": "Sneakers", "Season": "Fall", "Count": 31}, {"Item Purchased": "Sneakers", "Season": "Spring", "Count": 39}, {"Item Purchased": "Sneakers", "Season": "Summer", "Count": 36}, {"Item Purchased": "Sneakers", "Season": "Winter", "Count": 39}, {"Item Purchased": "Socks", "Season": "Fall", "Count": 42}, {"Item Purchased": "Socks", "Season": "Spring", "Count": 40}, {"Item Purchased": "Socks", "Season": "Summer", "Count": 42}, {"Item Purchased": "Socks", "Season": "Winter", "Count": 35}, {"Item Purchased": "Sunglasses", "Season": "Fall", "Count": 39}, {"Item Purchased": "Sunglasses", "Season": "Spring", "Count": 33}, {"Item Purchased": "Sunglasses", "Season": "Summer", "Count": 37}, {"Item Purchased": "Sunglasses", "Season": "Winter", "Count": 52}, {"Item Purchased": "Sweater", "Season": "Fall", "Count": 42}, {"Item Purchased": "Sweater", "Season": "Spring", "Count": 52}, {"Item Purchased": "Sweater", "Season": "Summer", "Count": 28}, {"Item Purchased": "Sweater", "Season": "Winter", "Count": 42}, {"Item Purchased": "T-shirt", "Season": "Fall", "Count": 39}, {"Item Purchased": "T-shirt", "Season": "Spring", "Count": 38}, {"Item Purchased": "T-shirt", "Season": "Summer", "Count": 30}, {"Item Purchased": "T-shirt", "Season": "Winter", "Count": 40}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

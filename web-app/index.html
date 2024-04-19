@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS4200 Project</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Understanding the American Shopper</h1>
+        <p class="project-by">Project By: Ari Dagan, Dylan Owens, Eric Lau, Sarah Zhong</p>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Our project is to analyze nearly 4,000 records of American Shopping purchases for insights into consumer behavior. We aimed to uncover patterns that can inform businesses how to tailor their products and marketing strategies. Our motivation for choosing this project stems from understanding consumer behavior dynamics in the digital age and practicing how businesses can approach product development and marketing, making our project not just an academic endeavor but a tool for real-world application.</p>
+    </section>
+
+    <section id="our-data">
+        <h2>Our Data</h2>
+        <div class="data-images">
+            <img src="images/data1.jpg" alt="Data Visualization 1">
+            <img src="images/data3.jpg" alt="Data Visualization 3">
+        </div>
+        <p class="data-description">Our group chose to use the Customer Shopping Trends dataset sourced from Kaggle. This dataset offers valuable insight into consumer preferences and behaviors surrounding purchasing patterns. There are 3900 observations in this dataset containing both categorical and continuous variables which made it suitable for various analysis approaches to better understand the consumer market. Specifically, the features of our dataset included the customer age, gender, and locationThis way we were able to understand consumer-specific demographics and preferences for purchases. The dataset also included additional data regarding each user's purchase, such as the preferred payment method utilized, the specific item and its category, along with its color, size, and the season in which it was purchased. By having a dataset with a wide variety of features, it allowed us to have various analysis approaches to encourage more robust conclusions about the consumer market to improve business decisions to appeal to their consumers.</p>
+    </section>
+
+    <h2 class="section-title">Static Visualizations:</h2>
+
+    <div class="visualization">
+        <h3><strong>Static Visualization 1:</strong> Total Purchases with and without Discounts</h3>
+        <div class="visualization-content">
+            <img src="images/static1.jpg" alt="Total Purchases with and without Discounts" class="visualization-image">
+            <div class="visualization-text">
+                <p>In this graph, we are analyzing how many purchases are used with and without, as you can see non discounts are higher in every category as expected. consumers buy a lot of clothing, regardless of discounts, which indicates a lower price sensitivity for this category. This consistent purchasing behavior suggests a strong demand and a perceived value in these products that transcends price. But as we start looking at the categories with smaller purchasing volumes it seems as the purchasing amount decreases so does the difference in things purchased with and without a discount. The categories that have lower purchase amounts are also ones that seemed to be more expensive like outerwear and footwear, which people usually don't buy as often as clothes, these people are just holding out for reduced prices on higher-ticket items. This behavior points to potential opportunities for strategic discounting—carefully timing sales to convert these waiting consumers into buyers.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="visualization">
+        <h3><strong>Static Visualization 2:</strong> Popular Colors per State by Season</h3>
+        <div class="visualization-content">
+            <img src="images/static2.jpg" alt="Popular Colors per State by Season" class="visualization-image">
+            <div class="visualization-text">
+                <p>The visualizations presented in the image show maps of the United States, each highlighting the favorite colors for different seasons: fall, winter, spring, and summer. Each state is filled with a different color, representing the most preferred hue for that particular season. The fall map uses earthy tones, with variations of brown and olive suggesting a preference for colors reminiscent of autumn foliage. The winter map is dominated by cooler colors, like blues and greens, possibly reflecting the colors of the season such as snow and evergreen trees. The spring map stands out with darker tones, including a substantial amount of black, which is unconventional for the typically vibrant and pastel-associated spring. In contrast, the summer map uses a bright yellow for Alaska, evoking the imagery of sunlight and warmth, while the contiguous states are represented in a multitude of colors, potentially signifying a diversity of preferences during this season. These visualizations could serve as a colorful guide to seasonal color preferences across the U.S.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="visualization">
+        <h3><strong>Static Visualization 3:</strong> Choropleth Maps of Purchase Amounts by Age Category</h3>
+        <div class="visualization-content">
+            <img src="images/static3.jpg" alt="Choropleth Maps of Purchase Amounts by Age Category" class="visualization-image">
+            <div class="visualization-text">
+                <p>The provided image showcases two choropleth maps of the United States, comparing purchase amounts by two distinct age categories: consumers under 30 years old and those over 30. Both maps are color-coded, corresponding to the scale at the bottom, which transitions from a dark purple, representing lower purchase amounts, to a bright yellow, indicating higher purchase amounts. The map on the left depicts consumers under 30 years old and shows a variety of colors across states, suggesting a diverse range of purchase behaviors in this demographic. In contrast, the map on the right, representing consumers over 30, also displays a range of purchase amounts, but with different patterns compared to the younger group. The variation in colors between the two maps indicates significant differences in purchasing patterns based on age groups. The darker regions on each map point to areas with lower economic activity among the respective age groups, while the brighter areas signify regions with higher spending. This kind of visualization is instrumental in identifying demographic trends and can be valuable for businesses targeting specific age groups.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Interactive Visualizations:</h2>
+
+    <div class="visualization">
+        <h3><strong>Interactive Visualization 1:</strong> Purchase Amount by Gender and Age</h3>
+        <div class="visualization-content">
+            <iframe src="interactive/GenderAgePurchaseAmountINT2.html" class="visualization-iframe" title="Interactive Visualization: Purchase Amount by Gender and Age"></iframe>
+            <div class="visualization-text">
+                <p>This interactive visualization helps to visualize the total cost of products purchased by a specific age and gender. The visualizations allow one to choose a specific age ranging from 18-70 years old and the graph will then display a bar graph representing the total cost for the products purchased by males and females indicated by the two bars highlighted in pink for females and blue for males. Across a majority of age groups, it is clear that the total amount spent on items was higher for men than for women, where men had a total purchase amount almost double that of females across many of the age ranges. Furthermore, for younger age groups, the range of total purchase amounts were significantly less than for those in their later years, where the range of purchasing for these ages ranged up to 3400$ USD. This is an indication that those that are older are more likely to purchase retail goods than the younger audience given they likely have more income than younger age groups that still might be reliant on their parents as an income source.</p>
+            </div>
+        </div>
+    </div>
+
+<div class="visualization">
+    <h3><strong>Interactive Visualization 2:</strong> Most Popular Trends per State</h3>
+    <div class="visualization-content">
+        <iframe src="interactive/mostPopularTrendsINT1.html" class="visualization-iframe" title="Interactive Visualization: Most Popular Trends per State"></iframe>
+    </div>
+    <div class="visualization-text">
+        <p>This interactive graph helps to visualize the most purchased items and used payment method in each state. The graph visualizes this first by visually highlighting states based on whether the most popular category of items purchased were clothing items or accessories. To see the specific purchasing trends in each state, hovering over each of the states and clicking them reveals a popup function that reveals the most popular item purchased and the most popular payment method in that state.</p>
+        <p>This graph visually shows that for all of the states excluding New Mexico, Nebraska, Iowa, Kentucky, West Virginia, New Jersey, and New Hampshire, the most popular category of items purchased were clothing while for the other states the most popular category of items purchased were accessories. When comparing the specific purchasing trends of each state, it was found that there was a variety of different types of items purchased in each state. For many states that were further north many of the most popular items purchased were coats, jackets, socks, gloves, and pants. For states further south there was some more variety ranging from dresses and hoodies to handbags, jewelry and shoes. When looking at the most popular payment method for each of the states, a majority of states primarily used modern method of payment such as Paypal and debit/credit cards while some states still used cash as their primary payment method.</p>
+    </div>
+</div>
+
+
+<section id="summary" class="content-section">
+    <h2>Summary of Our Findings</h2>
+    <p class="content-description">These visualizations approached understanding consumer behavior and preferences from various perspectives to provide valuable insights into the current market to encourage targeted business strategies to drive business growth. In our findings, we found that across more states, many individuals prioritized purchasing clothing items with some biases in clothing purchases based on the geographic location of the individual. Furthermore, there were some seasonal color preferences across the states where there were more earthy tones for the fall and summer with more cool-toned colors for the winter time. Across the country, individuals utilized modern payment methods like PayPal and debit/credit cards to pay for their purchases. In terms of purchasing based on consumer demographics, it was found that older individuals tended to spend more compared to the younger demographic and women tended to spend less than men across most age groups.</p>
+</section>
+
+<section id="reference-links" class="content-section">
+    <h2>Reference Links</h2>
+    <ul class="reference-list">
+        <li><a href="https://blog.gwi.com/marketing/retail-trends/" target="_blank">Retail Trends Analysis</a></li>
+        <li><a href="https://www.junglescout.com/consumer-trends/" target="_blank">Consumer Trends Report</a></li>
+        <li><a href="https://www2.deloitte.com/us/en/insights/industry/retail-distribution/consumer-behavior-trends-state-of-the-consumer-tracker.html" target="_blank">Consumer Behavior Trends</a></li>
+    </ul>
+</section>
+
+<section id="data-set" class="content-section">
+    <h2>Data Set</h2>
+    <p>
+        <a href="https://www.kaggle.com/datasets/zeesolver/consumer-behavior-and-shopping-habits-dataset" target="_blank">Consumer Behavior and Shopping Habits Dataset</a>
+    </p>
+</section>
+
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
