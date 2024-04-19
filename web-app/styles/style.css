@@ -75,6 +75,28 @@ header h1 {
     font-weight: bold;
 }
 
+.visualization-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.visualization-image {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+.visualization-text {
+    width: 75%; /* Text container matches the image width */
+    margin: 0 auto; /* Center the text container */
+    text-align: left; /* Align the text to the left inside the container */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 .visualization-text {
     width: 75%;
     margin: 0 auto 40px;
